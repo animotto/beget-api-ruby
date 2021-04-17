@@ -34,7 +34,7 @@ module Beget
       ].join("/") + "?" + URI.encode_www_form(query)
 
       response = Net::HTTP.get_response(URI(uri))
-      raise HTTPError, response.code unless response.is_a?(Net::HTTPOK)
+      raise HTTPError, response.code unless response.is_a?(Net::HTTPSuccess)
 
       response_data = JSON.parse(response.body)
       raise RequestError.new(
