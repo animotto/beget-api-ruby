@@ -19,7 +19,7 @@ module Beget
     end
 
     def respond_to_missing?(method, _)
-      SECTIONS.include?(method.to_s)
+      true
     end
 
     def request(section, method, **data)
