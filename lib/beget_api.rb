@@ -18,7 +18,7 @@ module Beget
       Section.new(self, method)
     end
 
-    def respond_to_missing?(method, _)
+    def respond_to_missing?
       true
     end
 
