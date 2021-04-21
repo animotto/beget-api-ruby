@@ -2,6 +2,20 @@
 
 Simple wrapper for [API](https://beget.com/ru/kb/api/beget-api) of hosting provider [Beget](https://beget.com)
 
+# Installation
+
+Add this line to your Gemfile:
+
+    gem 'beget_api'
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install beget_api
+
 # How to use it
 
 Create a new instance:
